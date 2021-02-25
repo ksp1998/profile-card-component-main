@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+
+      @media screen and (min-width: 375px) {
+        .card {
+          width: 350px;
+        }
+      }
+
+      @media screen and (min-width: 540px) {
+        .card {
+          width: 350px;
+        }
+      }
+
+      @media screen and (min-width: 960px) {
+        .card {
+          width: 350px;
+        }
+      }
+
+      @media screen and (min-width: 1440px) {
+        .card {
+          width: 350px;
+        }
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: fixed;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      body {   
+        background-color: hsl(185, 75%, 39%);
+      }
+
+      .div-left {
+        width: 50vw;
+        height: 100vh;
+        position: fixed;
+        background-image: url("images/bg-pattern-top.svg");
+        background-position-x: right;
+        background-position-y: -69vh;
+        background-repeat: no-repeat;
+        left: 0;
+        top: 0;
+      }
+
+      .div-right {
+        width: 50vw;
+        height: 100vh;
+        position: fixed;
+        background-image: url("images/bg-pattern-bottom.svg");
+        background-position-y: 49vh;
+        background-repeat: no-repeat;
+        transform: translateX(50vw);
+        top: 0;
+        left: 0;
+      }
+
+      .card {
+        margin: auto;
+        transform: translateY(calc(50vh - 50%));
+        background-color: #fff;
+        border-radius: 1rem;
+      }
+
+      .profile {
+        background-image: url("images/bg-pattern-card.svg");
+        background-size: cover;
+        border-radius: 1rem 1rem 0 0;
+        text-align: center;
+      }
+
+      .profile img {
+        border: .4rem solid white;;
+        border-radius: 4rem;
+        transform: translateY(50%);
+      }
+
+      .title {
+        text-align: center;
+        margin: 75px 0 0 0;
+        font-size: 18px;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-weight: 700;
+        color: hsl(0, 0%, 30%);
+      }
+
+      .title-number, .title-subtext, .subtext {
+        color: hsl(0, 0%, 50%);
+        font-weight: 400;
+        font-size: 13px;
+        font-family: 'Kumbh Sans', sans-serif;
+      }
+
+      .title-number {
+        font-size: 18px;
+      }
+
+      .title-subtext {
+        font-size: 16px;
+      }
+
+      hr {
+        border: .01rem solid hsl(0, 0%, 90%);
+      }
+
+      .stats {
+        border-radius: 0 0 1rem 1rem;
+        display: flex;
+        justify-content: space-around;
+        padding: .25rem; 
+      }
+
+      .section {
+        text-align: center;
+      }
+
+      .title-text {
+        font-size: 16px;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-weight: 700;
+        color: hsl(0, 0%, 30%);
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- to set circle images-->
+    <div class="div-left"></div>
+    <div class="div-right"></div>
+
+    <div class="card">
+
+      <div class="profile">
+        <img src="images/image-victor.jpg">
+      </div>
+
+      <div class="title">
+        <p class="title-text">Victor Crest <span class="title-number">26</span></p>
+        <p class="title-subtext">London</p>
+      </div>
+
+      <hr>
+
+      <div class="stats">
+
+        <div class="section">
+          <p class="title-text">80K</p>
+          <p class="subtext">Followers</p>
+        </div>
+
+        <div class="section">
+          <p class="title-text">803K</p>
+          <p class="subtext">Likes</p>
+        </div>
+
+        <div class="section">
+          <p class="title-text">1.4K</p>
+          <p class="subtext">Photos</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/ksp1998">Kiran Suthar</a>.
+    </div>
+  </body>
+</html>
